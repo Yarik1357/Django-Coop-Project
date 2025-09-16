@@ -2,7 +2,8 @@
 Проект для школы Logika 
 Проект будет влючать в себя сайт, с форумом, задачами, роли, и тд... 
 
-
+[Телеграм](https://t.me/+AZBwysCv3uBkNzJi)
+[Trello](https://trello.com/invite/b/68bd92b731769a4494d0387c/ATTI112b7cec230fdb352df2661bb054586bEAE858B6/кооп-проект)
 
 # Учасники проекта:
 
