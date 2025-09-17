@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "8bitFont";
+    src: url("/static/fonts/8bitFont.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "NewCartoonFont";
+    src: url("/static/fonts/NewCartoonFont.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Normal2Font";
+    src: url("/static/fonts/Normal2Font.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Основные стили для ВСЕХ страниц */
+body {
+    background: rgb(176, 141, 220);
+    color: rgb(65, 22, 117);
+    font-family: "8bitFont", sans-serif;
+}
+
+a {
+    text-decoration: none ;
+    font-weight: normal;
+}
+a:hover {
+    color: rgb(35, 8, 67);
+    font-weight: bold;
+}
+
+button {
+    background-color: rgb(170, 125, 224);
+    border:rgb(52, 16, 96);
+    border-width: 10px;
+    padding: 10px 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: "8bitFont", sans-serif;
+}
+button:hover {
+    background-color: rgb(147, 94, 212);
+}
