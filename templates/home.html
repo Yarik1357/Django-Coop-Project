@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<h2 style="text-align: center;">Добро пожаловать!</h2>
+
+<div class="cards">
+    <a href="/news/" class="card">
+        <h3>Новости</h3>
+        {% if latest_news %}
+            <p>{{ latest_news.title }}</p>
+        {% else %}
+            <p>Новостей пока нет...</p>
+        {% endif %}
+    </a>
+
+    <a href="/forum/" class="card">
+        <h3>Форум</h3>
+        {% if latest_post %}
+            <p>{{ latest_post.title }}</p>
+        {% else %}
+            <p>Постов пока нет...</p>
+        {% endif %}
+    </a>
+
+    <a href="/calendar/" class="card">
+        <h3>Календарь</h3>
+        {% if next_event %}
+            <p>{{ next_event.title }}</p>
+        {% else %}
+            <p>Событий пока нет...</p>
+        {% endif %}
+    </a>
+</div>
+{% endblock %}
