@@ -3,7 +3,17 @@
 {% block title %}Главная{% endblock %}
 
 {% block content %}
-<h2 style="text-align: center;">Добро пожаловать!</h2>
+{% if user.is_authenticated %}
+    {% if user.is_admin %}
+        <h2 style="text-align: center;">Привет, админ!</h2>
+    {% elif user.is_moderator %}
+        <h2 style="text-align: center;">Привет, модератор!</h2>
+    {% else %}
+        <h2 style="text-align: center;">Привет, пользователь!</h2>
+    {% endif %}
+{% else %}
+    <h2 style="text-align: center; padding-top: 30px;">Войдите или зарегистрируйтесь!</h2>
+{% endif %}
 
 <div class="cards">
     <a href="/news/" class="card">
